@@ -18,6 +18,11 @@ pub fn encoding_from_whatwg_label(label: &str) -> Option<EncodingRef> {
         "utf-8" |
         "utf8" =>
             Some(all::UTF_8 as EncodingRef),
+        "850" |
+        "cp850" |
+        "csibm850" |
+        "ibm850" =>
+            Some(all::IBM850 as EncodingRef),
         "866" |
         "cp866" |
         "csibm866" |
